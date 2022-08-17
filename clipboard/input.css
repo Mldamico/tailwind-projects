@@ -10,11 +10,19 @@
 }
 
 .section-container {
-  @apply max-w-6xl mx-auto text-center;
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+.item-container {
+  @apply flex flex-col mt-16 mb-24 space-y-12 text-xl md:mb-60 md:text-left md:pl-16 md:w-1/2;
 }
 
 .button-container {
   @apply flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4;
+}
+
+.section-text {
+  @apply max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-grayishBlue;
 }
 
 
