@@ -1,6 +1,18 @@
 const errMsg = document.getElementById('err-msg')
 const input = document.getElementById('link-input')
 const linkForm = document.getElementById('link-form')
+const menuBtn = document.getElementById('menu-btn')
+const menu = document.getElementById('menu')
+
+const navToggle = () => {
+  menuBtn.classList.toggle('open')
+  menu.classList.toggle('flex')
+  menu.classList.toggle('hidden')
+}
+
+menuBtn.addEventListener('click', navToggle)
+
+
 
 function validURL(str) {
   var pattern = new RegExp(
